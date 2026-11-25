@@ -1,0 +1,41 @@
+Summary for /Users/kd-qa-0294/Desktop/REV/rea/games/green-farm-3/original/green-farm-3-240x320.jar
+Decompiled with CFR 0.152
+
+
+a
+----------------------------
+
+d(int int )
+  Unable to fully structure code
+gW()
+  Unable to fully structure code
+  Could not resolve type clashes
+hf()
+  Unable to fully structure code
+q(int )
+  Unable to fully structure code
+hE()
+  Unable to fully structure code
+h(int boolean )
+  Unable to fully structure code
+z(int )
+  Handled duff style switch with additional control
+ix()
+  Unable to fully structure code
+e()
+  Unable to fully structure code
+
+
+d
+----------------------------
+
+a(javax.microedition.lcdui.Graphics int int int int int int )
+  Unable to fully structure code
+  Could not resolve type clashes
+
+
+k
+----------------------------
+
+a(int )
+  Unable to fully structure code

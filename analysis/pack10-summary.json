@@ -1,0 +1,121 @@
+{
+ "pack": "10",
+ "block_count": 21,
+ "sprite_blocks": 0,
+ "skipped_blocks": [
+  {
+   "block": 0,
+   "len": 3364,
+   "head": "ffffffffffffffff"
+  },
+  {
+   "block": 1,
+   "len": 3364,
+   "head": "0000000000000000"
+  },
+  {
+   "block": 2,
+   "len": 6,
+   "head": "3a003a000000"
+  },
+  {
+   "block": 3,
+   "len": 224,
+   "head": "320c005203000005"
+  },
+  {
+   "block": 4,
+   "len": 1859,
+   "head": "325b0014045b0205"
+  },
+  {
+   "block": 5,
+   "len": 1286,
+   "head": "3602070001320b00"
+  },
+  {
+   "block": 6,
+   "len": 1367,
+   "head": "36020f0014320a00"
+  },
+  {
+   "block": 7,
+   "len": 2038,
+   "head": "36023f000c320603"
+  },
+  {
+   "block": 8,
+   "len": 2350,
+   "head": "3602ff0019320200"
+  },
+  {
+   "block": 9,
+   "len": 2025,
+   "head": "3602ff0319320200"
+  },
+  {
+   "block": 10,
+   "len": 2155,
+   "head": "36023f001e320200"
+  },
+  {
+   "block": 11,
+   "len": 1096,
+   "head": "36020f0005320200"
+  },
+  {
+   "block": 12,
+   "len": 1271,
+   "head": "36027f0022320200"
+  },
+  {
+   "block": 13,
+   "len": 1513,
+   "head": "3602ff0726325300"
+  },
+  {
+   "block": 14,
+   "len": 1526,
+   "head": "3602ff1f2a32b800"
+  },
+  {
+   "block": 15,
+   "len": 194,
+   "head": "0101000600000500"
+  },
+  {
+   "block": 16,
+   "len": 52,
+   "head": "3211271000980005"
+  },
+  {
+   "block": 17,
+   "len": 157,
+   "head": "0181010500000300"
+  },
+  {
+   "block": 18,
+   "len": 39,
+   "head": "321027f902400105"
+  },
+  {
+   "block": 19,
+   "len": 176,
+   "head": "0101000600000200"
+  },
+  {
+   "block": 20,
+   "len": 65,
+   "head": "3210274202fd0005"
+  }
+ ],
+ "modules": 0,
+ "frames": 0,
+ "anims": 0,
+ "pixel_formats": {},
+ "data_formats": {},
+ "pngs": [],
+ "errors": [],
+ "rle_bits": [],
+ "recovered_bits": []
+}

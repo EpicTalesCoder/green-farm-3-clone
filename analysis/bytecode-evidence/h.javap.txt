@@ -1,0 +1,100 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/green-farm-3/analysis/recovered/h.class
+  Last modified Nov 22, 2026; size 626 bytes
+  SHA-256 checksum 8f1b9ca06c8fe1ed017d7f347ee27ece20932f9e5c4aab4f0fcf645c3dba3c2c
+final class h extends java.util.TimerTask
+  minor version: 3
+  major version: 45
+  flags: (0x0030) ACC_FINAL, ACC_SUPER
+  this_class: #2                          // h
+  super_class: #6                         // java/util/TimerTask
+  interfaces: 0, fields: 0, methods: 2, attributes: 0
+Constant pool:
+   #1 = String             #30            // PaySMS.buy: Failed to close connection in timer. Exception:
+   #2 = Class              #37            // h
+   #3 = Class              #38            // java/lang/Exception
+   #4 = Class              #39            // java/lang/StringBuffer
+   #5 = Class              #40            // java/lang/Throwable
+   #6 = Class              #41            // java/util/TimerTask
+   #7 = Class              #42            // javax/microedition/io/Connection
+   #8 = Class              #43            // l
+   #9 = Fieldref           #8.#18         // l.a:Lwfree/MessageConnection;
+  #10 = Fieldref           #8.#19         // l.a:Z
+  #11 = Fieldref           #8.#21         // l.b:Z
+  #12 = Methodref          #4.#17         // java/lang/StringBuffer."<init>":()V
+  #13 = Methodref          #4.#20         // java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #14 = Methodref          #5.#23         // java/lang/Throwable.toString:()Ljava/lang/String;
+  #15 = Methodref          #6.#17         // java/util/TimerTask."<init>":()V
+  #16 = InterfaceMethodref #7.#22         // javax/microedition/io/Connection.close:()V
+  #17 = NameAndType        #27:#25        // "<init>":()V
+  #18 = NameAndType        #33:#29        // a:Lwfree/MessageConnection;
+  #19 = NameAndType        #33:#32        // a:Z
+  #20 = NameAndType        #34:#26        // append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #21 = NameAndType        #35:#32        // b:Z
+  #22 = NameAndType        #36:#25        // close:()V
+  #23 = NameAndType        #45:#24        // toString:()Ljava/lang/String;
+  #24 = Utf8               ()Ljava/lang/String;
+  #25 = Utf8               ()V
+  #26 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #27 = Utf8               <init>
+  #28 = Utf8               Code
+  #29 = Utf8               Lwfree/MessageConnection;
+  #30 = Utf8               PaySMS.buy: Failed to close connection in timer. Exception:
+  #31 = Utf8               StackMap
+  #32 = Utf8               Z
+  #33 = Utf8               a
+  #34 = Utf8               append
+  #35 = Utf8               b
+  #36 = Utf8               close
+  #37 = Utf8               h
+  #38 = Utf8               java/lang/Exception
+  #39 = Utf8               java/lang/StringBuffer
+  #40 = Utf8               java/lang/Throwable
+  #41 = Utf8               java/util/TimerTask
+  #42 = Utf8               javax/microedition/io/Connection
+  #43 = Utf8               l
+  #44 = Utf8               run
+  #45 = Utf8               toString
+{
+  h();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #15                 // Method java/util/TimerTask."<init>":()V
+         4: return
+
+  public final void run();
+    descriptor: ()V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #11                 // Field l.b:Z
+         3: ifne          40
+         6: iconst_1
+         7: putstatic     #10                 // Field l.a:Z
+        10: getstatic     #9                  // Field l.a:Lwfree/MessageConnection;
+        13: invokeinterface #16,  1           // InterfaceMethod javax/microedition/io/Connection.close:()V
+        18: return
+        19: astore_1
+        20: new           #4                  // class java/lang/StringBuffer
+        23: dup
+        24: invokespecial #12                 // Method java/lang/StringBuffer."<init>":()V
+        27: ldc           #1                  // String PaySMS.buy: Failed to close connection in timer. Exception:
+        29: invokevirtual #13                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        32: aload_1
+        33: invokevirtual #14                 // Method java/lang/Throwable.toString:()Ljava/lang/String;
+        36: invokevirtual #13                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        39: pop
+        40: return
+      Exception table:
+         from    to  target type
+             6    18    19   Class java/lang/Exception
+      StackMap: number_of_entries = 2
+        frame_type = 255 offset = 19
+          locals = []
+          stack = [ class java/lang/Exception ]
+        frame_type = 255 offset = 40
+          locals = []
+          stack = []
+}

@@ -1,0 +1,114 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/green-farm-3/analysis/recovered/j.class
+  Last modified Nov 22, 2026; size 603 bytes
+  SHA-256 checksum ff1efb31156e6e631227224c7c82454fb573179e7a5226f52aa3328713b9e853
+public final class j
+  minor version: 3
+  major version: 45
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #1                          // j
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 5, attributes: 0
+Constant pool:
+   #1 = Class              #30            // j
+   #2 = Class              #31            // java/lang/Object
+   #3 = Class              #32            // javax/microedition/lcdui/Image
+   #4 = Fieldref           #1.#12         // j.a:Ljavax/microedition/lcdui/Image;
+   #5 = Methodref          #1.#11         // j."<init>":(Ljavax/microedition/lcdui/Image;)V
+   #6 = Methodref          #2.#10         // java/lang/Object."<init>":()V
+   #7 = Methodref          #3.#13         // javax/microedition/lcdui/Image.createImage:(II)Ljavax/microedition/lcdui/Image;
+   #8 = Methodref          #3.#14         // javax/microedition/lcdui/Image.createRGBImage:([IIIZ)Ljavax/microedition/lcdui/Image;
+   #9 = Methodref          #3.#15         // javax/microedition/lcdui/Image.getRGB:([IIIIIII)V
+  #10 = NameAndType        #23:#16        // "<init>":()V
+  #11 = NameAndType        #23:#19        // "<init>":(Ljavax/microedition/lcdui/Image;)V
+  #12 = NameAndType        #26:#25        // a:Ljavax/microedition/lcdui/Image;
+  #13 = NameAndType        #27:#18        // createImage:(II)Ljavax/microedition/lcdui/Image;
+  #14 = NameAndType        #28:#22        // createRGBImage:([IIIZ)Ljavax/microedition/lcdui/Image;
+  #15 = NameAndType        #29:#21        // getRGB:([IIIIIII)V
+  #16 = Utf8               ()V
+  #17 = Utf8               (II)Lj;
+  #18 = Utf8               (II)Ljavax/microedition/lcdui/Image;
+  #19 = Utf8               (Ljavax/microedition/lcdui/Image;)V
+  #20 = Utf8               ([III)Lj;
+  #21 = Utf8               ([IIIIIII)V
+  #22 = Utf8               ([IIIZ)Ljavax/microedition/lcdui/Image;
+  #23 = Utf8               <init>
+  #24 = Utf8               Code
+  #25 = Utf8               Ljavax/microedition/lcdui/Image;
+  #26 = Utf8               a
+  #27 = Utf8               createImage
+  #28 = Utf8               createRGBImage
+  #29 = Utf8               getRGB
+  #30 = Utf8               j
+  #31 = Utf8               java/lang/Object
+  #32 = Utf8               javax/microedition/lcdui/Image
+{
+  javax.microedition.lcdui.Image a;
+    descriptor: Ljavax/microedition/lcdui/Image;
+    flags: (0x0000)
+
+  public static j a(int, int);
+    descriptor: (II)Lj;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: new           #1                  // class j
+         3: dup
+         4: iload_0
+         5: iload_1
+         6: invokestatic  #7                  // Method javax/microedition/lcdui/Image.createImage:(II)Ljavax/microedition/lcdui/Image;
+         9: invokespecial #5                  // Method "<init>":(Ljavax/microedition/lcdui/Image;)V
+        12: areturn
+
+  public static j a(int[], int, int);
+    descriptor: ([III)Lj;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=6, locals=3, args_size=3
+         0: new           #1                  // class j
+         3: dup
+         4: aload_0
+         5: iload_1
+         6: iload_2
+         7: iconst_1
+         8: invokestatic  #8                  // Method javax/microedition/lcdui/Image.createRGBImage:([IIIZ)Ljavax/microedition/lcdui/Image;
+        11: invokespecial #5                  // Method "<init>":(Ljavax/microedition/lcdui/Image;)V
+        14: areturn
+
+  public final void a(int[], int, int, int, int, int, int);
+    descriptor: ([IIIIIII)V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=8, locals=8, args_size=8
+         0: aload_0
+         1: getfield      #4                  // Field a:Ljavax/microedition/lcdui/Image;
+         4: aload_1
+         5: iconst_0
+         6: iload_3
+         7: iconst_0
+         8: iconst_0
+         9: iload         6
+        11: iload         7
+        13: invokevirtual #9                  // Method javax/microedition/lcdui/Image.getRGB:([IIIIIII)V
+        16: return
+
+  private j(javax.microedition.lcdui.Image);
+    descriptor: (Ljavax/microedition/lcdui/Image;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #4                  // Field a:Ljavax/microedition/lcdui/Image;
+         9: return
+
+  public j();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+         4: return
+}

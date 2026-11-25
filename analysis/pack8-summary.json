@@ -1,0 +1,94 @@
+{
+ "pack": "8",
+ "block_count": 1,
+ "sprite_blocks": 1,
+ "skipped_blocks": [],
+ "modules": 9,
+ "frames": 3,
+ "anims": 0,
+ "pixel_formats": {
+  "0x5515": 1
+ },
+ "data_formats": {
+  "I64RLE": 1
+ },
+ "pngs": [
+  {
+   "file": "8_b000_m00.png",
+   "w": 32,
+   "h": 100,
+   "block": 0,
+   "module": 0,
+   "consumed": 667,
+   "data_len": 667
+  },
+  {
+   "file": "8_b000_m01.png",
+   "w": 48,
+   "h": 12,
+   "block": 0,
+   "module": 1,
+   "consumed": 72,
+   "data_len": 72
+  },
+  {
+   "file": "8_b000_m03.png",
+   "w": 48,
+   "h": 11,
+   "block": 0,
+   "module": 3,
+   "consumed": 66,
+   "data_len": 66
+  },
+  {
+   "file": "8_b000_m04.png",
+   "w": 34,
+   "h": 100,
+   "block": 0,
+   "module": 4,
+   "consumed": 706,
+   "data_len": 706
+  },
+  {
+   "file": "8_b000_m05.png",
+   "w": 59,
+   "h": 44,
+   "block": 0,
+   "module": 5,
+   "consumed": 394,
+   "data_len": 394
+  },
+  {
+   "file": "8_b000_m06.png",
+   "w": 37,
+   "h": 37,
+   "block": 0,
+   "module": 6,
+   "consumed": 175,
+   "data_len": 175
+  },
+  {
+   "file": "8_b000_m07.png",
+   "w": 104,
+   "h": 28,
+   "block": 0,
+   "module": 7,
+   "consumed": 465,
+   "data_len": 465
+  },
+  {
+   "file": "8_b000_m08.png",
+   "w": 104,
+   "h": 28,
+   "block": 0,
+   "module": 8,
+   "consumed": 446,
+   "data_len": 446
+  }
+ ],
+ "errors": [],
+ "rle_bits": [
+  5
+ ],
+ "recovered_bits": []
+}

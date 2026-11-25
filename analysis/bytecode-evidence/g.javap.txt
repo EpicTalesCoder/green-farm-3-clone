@@ -1,0 +1,591 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/green-farm-3/analysis/recovered/g.class
+  Last modified Nov 22, 2026; size 1836 bytes
+  SHA-256 checksum 0a2b3a0e98741b9f3a033b5015fccc0f5958c68df16658f0e2bf68c05de8be54
+public final class g
+  minor version: 3
+  major version: 45
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #6                          // g
+  super_class: #7                         // java/lang/Object
+  interfaces: 0, fields: 6, methods: 3, attributes: 0
+Constant pool:
+   #1 = String             #41            // /9
+   #2 = Class              #48            // "[B"
+   #3 = Class              #51            // "[[I"
+   #4 = Class              #52            // a
+   #5 = Class              #55            // f
+   #6 = Class              #56            // g
+   #7 = Class              #58            // java/lang/Object
+   #8 = Fieldref           #4.#33         // a.h:Z
+   #9 = Fieldref           #6.#26         // g.a:I
+  #10 = Fieldref           #6.#27         // g.a:Z
+  #11 = Fieldref           #6.#28         // g.a:[I
+  #12 = Fieldref           #6.#29         // g.a:[Lg;
+  #13 = Fieldref           #6.#30         // g.a:[[I
+  #14 = Fieldref           #6.#31         // g.b:I
+  #15 = Methodref          #5.#23         // f.a:(I)[B
+  #16 = Methodref          #5.#24         // f.a:([BI)I
+  #17 = Methodref          #5.#25         // f.a:([BI)S
+  #18 = Methodref          #5.#32         // f.c:(Ljava/lang/String;)V
+  #19 = Methodref          #5.#34         // f.k:()V
+  #20 = Methodref          #6.#22         // g."<init>":()V
+  #21 = Methodref          #7.#22         // java/lang/Object."<init>":()V
+  #22 = NameAndType        #43:#35        // "<init>":()V
+  #23 = NameAndType        #52:#37        // a:(I)[B
+  #24 = NameAndType        #52:#39        // a:([BI)I
+  #25 = NameAndType        #52:#40        // a:([BI)S
+  #26 = NameAndType        #52:#45        // a:I
+  #27 = NameAndType        #52:#47        // a:Z
+  #28 = NameAndType        #52:#49        // a:[I
+  #29 = NameAndType        #52:#50        // a:[Lg;
+  #30 = NameAndType        #52:#51        // a:[[I
+  #31 = NameAndType        #53:#45        // b:I
+  #32 = NameAndType        #54:#38        // c:(Ljava/lang/String;)V
+  #33 = NameAndType        #57:#47        // h:Z
+  #34 = NameAndType        #59:#35        // k:()V
+  #35 = Utf8               ()V
+  #36 = Utf8               (I)Lg;
+  #37 = Utf8               (I)[B
+  #38 = Utf8               (Ljava/lang/String;)V
+  #39 = Utf8               ([BI)I
+  #40 = Utf8               ([BI)S
+  #41 = Utf8               /9
+  #42 = Utf8               <clinit>
+  #43 = Utf8               <init>
+  #44 = Utf8               Code
+  #45 = Utf8               I
+  #46 = Utf8               StackMap
+  #47 = Utf8               Z
+  #48 = Utf8               [B
+  #49 = Utf8               [I
+  #50 = Utf8               [Lg;
+  #51 = Utf8               [[I
+  #52 = Utf8               a
+  #53 = Utf8               b
+  #54 = Utf8               c
+  #55 = Utf8               f
+  #56 = Utf8               g
+  #57 = Utf8               h
+  #58 = Utf8               java/lang/Object
+  #59 = Utf8               k
+{
+  private int b;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+
+  public int a;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public int[][] a;
+    descriptor: [[I
+    flags: (0x0001) ACC_PUBLIC
+
+  private static g[] a;
+    descriptor: [Lg;
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  public static boolean a;
+    descriptor: Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  private static int[] a;
+    descriptor: [I
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  public g();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  public static g a(int);
+    descriptor: (I)Lg;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=9, args_size=1
+         0: iload_0
+         1: getstatic     #10                 // Field a:Z
+         4: istore_1
+         5: istore_0
+         6: getstatic     #12                 // Field a:[Lg;
+         9: iload_0
+        10: aaload
+        11: ifnull        20
+        14: getstatic     #12                 // Field a:[Lg;
+        17: iload_0
+        18: aaload
+        19: areturn
+        20: iload_1
+        21: ifeq          29
+        24: ldc           #1                  // String /9
+        26: invokestatic  #18                 // Method f.c:(Ljava/lang/String;)V
+        29: new           #6                  // class g
+        32: dup
+        33: invokespecial #20                 // Method "<init>":()V
+        36: astore_2
+        37: iload_0
+        38: invokestatic  #15                 // Method f.a:(I)[B
+        41: astore_3
+        42: iconst_0
+        43: istore        4
+        45: aload_2
+        46: aload_3
+        47: iconst_0
+        48: invokestatic  #16                 // Method f.a:([BI)I
+        51: putfield      #9                  // Field a:I
+        54: iinc          4, 4
+        57: aload_2
+        58: aload_3
+        59: iconst_4
+        60: invokestatic  #16                 // Method f.a:([BI)I
+        63: putfield      #14                 // Field b:I
+        66: iinc          4, 4
+        69: aload_2
+        70: getfield      #9                  // Field a:I
+        73: ifle          722
+        76: aload_2
+        77: getfield      #14                 // Field b:I
+        80: ifle          722
+        83: aload_2
+        84: getfield      #14                 // Field b:I
+        87: newarray       byte
+        89: astore        5
+        91: iconst_0
+        92: istore        6
+        94: iload         6
+        96: aload_2
+        97: getfield      #14                 // Field b:I
+       100: if_icmpge     121
+       103: aload         5
+       105: iload         6
+       107: aload_3
+       108: iload         4
+       110: baload
+       111: bastore
+       112: iinc          4, 1
+       115: iinc          6, 1
+       118: goto          94
+       121: aload_2
+       122: aload_2
+       123: getfield      #9                  // Field a:I
+       126: aload_2
+       127: getfield      #14                 // Field b:I
+       130: multianewarray #3,  2             // class "[[I"
+       134: putfield      #13                 // Field a:[[I
+       137: iconst_0
+       138: istore        6
+       140: iload         6
+       142: aload_2
+       143: getfield      #9                  // Field a:I
+       146: if_icmpge     722
+       149: iconst_0
+       150: istore        7
+       152: iload         7
+       154: aload_2
+       155: getfield      #14                 // Field b:I
+       158: if_icmpge     264
+       161: aload         5
+       163: iload         7
+       165: baload
+       166: tableswitch   { // 1 to 4
+                       1: 196
+                       2: 213
+                       3: 248
+                       4: 232
+                 default: 248
+            }
+       196: aload_2
+       197: getfield      #13                 // Field a:[[I
+       200: iload         6
+       202: aaload
+       203: iload         7
+       205: aload_3
+       206: iload         4
+       208: baload
+       209: iastore
+       210: goto          248
+       213: aload_2
+       214: getfield      #13                 // Field a:[[I
+       217: iload         6
+       219: aaload
+       220: iload         7
+       222: aload_3
+       223: iload         4
+       225: invokestatic  #17                 // Method f.a:([BI)S
+       228: iastore
+       229: goto          248
+       232: aload_2
+       233: getfield      #13                 // Field a:[[I
+       236: iload         6
+       238: aaload
+       239: iload         7
+       241: aload_3
+       242: iload         4
+       244: invokestatic  #16                 // Method f.a:([BI)I
+       247: iastore
+       248: iload         4
+       250: aload         5
+       252: iload         7
+       254: baload
+       255: iadd
+       256: istore        4
+       258: iinc          7, 1
+       261: goto          152
+       264: getstatic     #8                  // Field a.h:Z
+       267: ifne          716
+       270: iload_0
+       271: iload         6
+       273: aload_2
+       274: astore        8
+       276: istore        7
+       278: tableswitch   { // 0 to 22
+                       0: 479
+                       1: 626
+                       2: 504
+                       3: 410
+                       4: 601
+                       5: 716
+                       6: 672
+                       7: 551
+                       8: 716
+                       9: 716
+                      10: 716
+                      11: 716
+                      12: 407
+                      13: 716
+                      14: 716
+                      15: 716
+                      16: 716
+                      17: 716
+                      18: 716
+                      19: 716
+                      20: 384
+                      21: 716
+                      22: 576
+                 default: 716
+            }
+       384: aload         8
+       386: getfield      #13                 // Field a:[[I
+       389: iload         7
+       391: aaload
+       392: iconst_1
+       393: aload         8
+       395: getfield      #13                 // Field a:[[I
+       398: iload         7
+       400: aaload
+       401: iconst_2
+       402: iaload
+       403: iastore
+       404: goto          716
+       407: goto          716
+       410: aload         8
+       412: getfield      #13                 // Field a:[[I
+       415: iload         7
+       417: aaload
+       418: bipush        15
+       420: aload         8
+       422: getfield      #13                 // Field a:[[I
+       425: iload         7
+       427: aaload
+       428: bipush        16
+       430: iaload
+       431: iastore
+       432: aload         8
+       434: getfield      #13                 // Field a:[[I
+       437: iload         7
+       439: aaload
+       440: bipush        31
+       442: aload         8
+       444: getfield      #13                 // Field a:[[I
+       447: iload         7
+       449: aaload
+       450: bipush        32
+       452: iaload
+       453: iastore
+       454: aload         8
+       456: getfield      #13                 // Field a:[[I
+       459: iload         7
+       461: aaload
+       462: bipush        13
+       464: aload         8
+       466: getfield      #13                 // Field a:[[I
+       469: iload         7
+       471: aaload
+       472: bipush        14
+       474: iaload
+       475: iastore
+       476: goto          716
+       479: aload         8
+       481: getfield      #13                 // Field a:[[I
+       484: iload         7
+       486: aaload
+       487: bipush        15
+       489: aload         8
+       491: getfield      #13                 // Field a:[[I
+       494: iload         7
+       496: aaload
+       497: bipush        16
+       499: iaload
+       500: iastore
+       501: goto          716
+       504: aload         8
+       506: getfield      #13                 // Field a:[[I
+       509: iload         7
+       511: aaload
+       512: bipush        12
+       514: aload         8
+       516: getfield      #13                 // Field a:[[I
+       519: iload         7
+       521: aaload
+       522: bipush        13
+       524: iaload
+       525: iastore
+       526: aload         8
+       528: getfield      #13                 // Field a:[[I
+       531: iload         7
+       533: aaload
+       534: bipush        12
+       536: aload         8
+       538: getfield      #13                 // Field a:[[I
+       541: iload         7
+       543: aaload
+       544: bipush        13
+       546: iaload
+       547: iastore
+       548: goto          716
+       551: aload         8
+       553: getfield      #13                 // Field a:[[I
+       556: iload         7
+       558: aaload
+       559: bipush        16
+       561: aload         8
+       563: getfield      #13                 // Field a:[[I
+       566: iload         7
+       568: aaload
+       569: bipush        17
+       571: iaload
+       572: iastore
+       573: goto          716
+       576: aload         8
+       578: getfield      #13                 // Field a:[[I
+       581: iload         7
+       583: aaload
+       584: bipush        13
+       586: aload         8
+       588: getfield      #13                 // Field a:[[I
+       591: iload         7
+       593: aaload
+       594: bipush        14
+       596: iaload
+       597: iastore
+       598: goto          716
+       601: aload         8
+       603: getfield      #13                 // Field a:[[I
+       606: iload         7
+       608: aaload
+       609: bipush        19
+       611: aload         8
+       613: getfield      #13                 // Field a:[[I
+       616: iload         7
+       618: aaload
+       619: bipush        20
+       621: iaload
+       622: iastore
+       623: goto          716
+       626: aload         8
+       628: getfield      #13                 // Field a:[[I
+       631: iload         7
+       633: aaload
+       634: iconst_5
+       635: aload         8
+       637: getfield      #13                 // Field a:[[I
+       640: iload         7
+       642: aaload
+       643: bipush        6
+       645: iaload
+       646: iastore
+       647: aload         8
+       649: getfield      #13                 // Field a:[[I
+       652: iload         7
+       654: aaload
+       655: bipush        7
+       657: aload         8
+       659: getfield      #13                 // Field a:[[I
+       662: iload         7
+       664: aaload
+       665: bipush        8
+       667: iaload
+       668: iastore
+       669: goto          716
+       672: aload         8
+       674: getfield      #13                 // Field a:[[I
+       677: iload         7
+       679: aaload
+       680: bipush        8
+       682: aload         8
+       684: getfield      #13                 // Field a:[[I
+       687: iload         7
+       689: aaload
+       690: bipush        9
+       692: iaload
+       693: iastore
+       694: aload         8
+       696: getfield      #13                 // Field a:[[I
+       699: iload         7
+       701: aaload
+       702: bipush        10
+       704: aload         8
+       706: getfield      #13                 // Field a:[[I
+       709: iload         7
+       711: aaload
+       712: bipush        11
+       714: iaload
+       715: iastore
+       716: iinc          6, 1
+       719: goto          140
+       722: iload_1
+       723: ifeq          729
+       726: invokestatic  #19                 // Method f.k:()V
+       729: iconst_0
+       730: istore        7
+       732: iload         7
+       734: getstatic     #11                 // Field a:[I
+       737: arraylength
+       738: if_icmpge     761
+       741: iload_0
+       742: getstatic     #11                 // Field a:[I
+       745: iload         7
+       747: iaload
+       748: if_icmpne     755
+       751: iconst_1
+       752: goto          762
+       755: iinc          7, 1
+       758: goto          732
+       761: iconst_0
+       762: ifeq          771
+       765: getstatic     #12                 // Field a:[Lg;
+       768: iload_0
+       769: aload_2
+       770: aastore
+       771: aload_2
+       772: areturn
+      StackMap: number_of_entries = 29
+        frame_type = 255 offset = 20
+          locals = [ int, int ]
+          stack = []
+        frame_type = 255 offset = 29
+          locals = [ int, int ]
+          stack = []
+        frame_type = 255 offset = 94
+          locals = [ int, int, class g, class "[B", int, class "[B", int ]
+          stack = []
+        frame_type = 255 offset = 121
+          locals = [ int, int, class g, class "[B", int, class "[B" ]
+          stack = []
+        frame_type = 255 offset = 140
+          locals = [ int, int, class g, class "[B", int, class "[B", int ]
+          stack = []
+        frame_type = 255 offset = 152
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int ]
+          stack = []
+        frame_type = 255 offset = 196
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int ]
+          stack = []
+        frame_type = 255 offset = 213
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int ]
+          stack = []
+        frame_type = 255 offset = 232
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int ]
+          stack = []
+        frame_type = 255 offset = 248
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int ]
+          stack = []
+        frame_type = 255 offset = 264
+          locals = [ int, int, class g, class "[B", int, class "[B", int ]
+          stack = []
+        frame_type = 255 offset = 384
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 407
+          locals = [ int, int, class g, class "[B", int, class "[B", int ]
+          stack = []
+        frame_type = 255 offset = 410
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 479
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 504
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 551
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 576
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 601
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 626
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 672
+          locals = [ int, int, class g, class "[B", int, class "[B", int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 716
+          locals = [ int, int, class g, class "[B", int, class "[B", int ]
+          stack = []
+        frame_type = 255 offset = 722
+          locals = [ int, int, class g ]
+          stack = []
+        frame_type = 255 offset = 729
+          locals = [ int, top, class g ]
+          stack = []
+        frame_type = 255 offset = 732
+          locals = [ int, top, class g, top, top, top, top, int ]
+          stack = []
+        frame_type = 255 offset = 755
+          locals = [ int, top, class g, top, top, top, top, int ]
+          stack = []
+        frame_type = 255 offset = 761
+          locals = [ int, top, class g ]
+          stack = []
+        frame_type = 255 offset = 762
+          locals = [ int, top, class g ]
+          stack = [ int ]
+        frame_type = 255 offset = 771
+          locals = [ top, top, class g ]
+          stack = []
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=0, args_size=0
+         0: bipush        34
+         2: anewarray     #6                  // class g
+         5: putstatic     #12                 // Field a:[Lg;
+         8: iconst_1
+         9: putstatic     #10                 // Field a:Z
+        12: iconst_3
+        13: newarray       int
+        15: dup
+        16: iconst_0
+        17: bipush        8
+        19: iastore
+        20: dup
+        21: iconst_1
+        22: bipush        18
+        24: iastore
+        25: dup
+        26: iconst_2
+        27: bipush        24
+        29: iastore
+        30: putstatic     #11                 // Field a:[I
+        33: return
+}

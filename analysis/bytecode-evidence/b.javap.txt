@@ -1,0 +1,581 @@
+Classfile /Users/kd-qa-0294/Desktop/REV/rea/games/green-farm-3/analysis/recovered/b.class
+  Last modified Nov 22, 2026; size 3022 bytes
+  SHA-256 checksum 889b103743823f054d32feba6811f6a723d861af89db9113f0b2d7d36e8c5345
+final class b extends java.lang.Thread
+  minor version: 3
+  major version: 45
+  flags: (0x0030) ACC_FINAL, ACC_SUPER
+  this_class: #14                         // b
+  super_class: #20                        // java/lang/Thread
+  interfaces: 0, fields: 0, methods: 3, attributes: 0
+Constant pool:
+    #1 = String             #118          //
+    #2 = String             #145          // 0
+    #3 = String             #146          // 1
+    #4 = String             #150          // IAP-ShortCode-PP
+    #5 = String             #153          // PaySMS.buy: Connection opened - conn:
+    #6 = String             #154          // PaySMS.buy: Exception trying to sleep:
+    #7 = String             #155          // PaySMS.buy: Failed to close connection! Exception:
+    #8 = String             #156          // PaySMS.buy: SMS sent failed! Exception:
+    #9 = String             #157          // PaySMS.buy: SMS sent failed! Security Exception:
+   #10 = String             #158          // PaySMS.buy: TextMessage created - msg:
+   #11 = String             #159          // PaySMS.buy: smsAdress:
+   #12 = String             #193          // cbs://
+   #13 = String             #194          // text
+   #14 = Class              #165          // b
+   #15 = Class              #173          // h
+   #16 = Class              #174          // java/lang/Exception
+   #17 = Class              #175          // java/lang/SecurityException
+   #18 = Class              #176          // java/lang/String
+   #19 = Class              #177          // java/lang/StringBuffer
+   #20 = Class              #178          // java/lang/Thread
+   #21 = Class              #179          // java/lang/Throwable
+   #22 = Class              #180          // java/util/Timer
+   #23 = Class              #181          // javax/microedition/io/Connection
+   #24 = Class              #182          // wfree/C
+   #25 = Class              #183          // wfree/MessageConnection
+   #26 = Class              #184          // wfree/TextMessage
+   #27 = Class              #185          // l
+   #28 = Long               100l
+   #30 = Long               200l
+   #32 = Fieldref           #27.#87       // l.a:I
+   #33 = Fieldref           #27.#88       // l.a:Ljava/lang/String;
+   #34 = Fieldref           #27.#89       // l.a:Lwfree/MessageConnection;
+   #35 = Fieldref           #27.#90       // l.a:Z
+   #36 = Fieldref           #27.#91       // l.a:[Ljava/lang/String;
+   #37 = Fieldref           #27.#99       // l.b:I
+   #38 = Fieldref           #27.#100      // l.b:Z
+   #39 = Methodref          #15.#77       // h."<init>":()V
+   #40 = Methodref          #18.#106      // java/lang/String.equals:(Ljava/lang/Object;)Z
+   #41 = Methodref          #18.#117      // java/lang/String.valueOf:(I)Ljava/lang/String;
+   #42 = Methodref          #19.#77       // java/lang/StringBuffer."<init>":()V
+   #43 = Methodref          #19.#92       // java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+   #44 = Methodref          #19.#93       // java/lang/StringBuffer.append:(J)Ljava/lang/StringBuffer;
+   #45 = Methodref          #19.#94       // java/lang/StringBuffer.append:(Ljava/lang/Object;)Ljava/lang/StringBuffer;
+   #46 = Methodref          #19.#95       // java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+   #47 = Methodref          #19.#116      // java/lang/StringBuffer.toString:()Ljava/lang/String;
+   #48 = Methodref          #20.#77       // java/lang/Thread."<init>":()V
+   #49 = Methodref          #20.#115      // java/lang/Thread.sleep:(J)V
+   #50 = Methodref          #21.#116      // java/lang/Throwable.toString:()Ljava/lang/String;
+   #51 = Methodref          #22.#77       // java/util/Timer."<init>":()V
+   #52 = Methodref          #22.#112      // java/util/Timer.schedule:(Ljava/util/TimerTask;J)V
+   #53 = Methodref          #24.#111      // wfree/C.open:(Ljava/lang/String;)Ljavax/microedition/io/Connection;
+   #54 = Methodref          #27.#78       // l.a:()J
+   #55 = Methodref          #27.#79       // l.a:()Ljava/util/Timer;
+   #56 = Methodref          #27.#80       // l.a:()Ljava/util/Vector;
+   #57 = Methodref          #27.#81       // l.a:()[[Ljava/lang/String;
+   #58 = Methodref          #27.#82       // l.a:(Ljava/lang/String;)Ljava/lang/String;
+   #59 = Methodref          #27.#83       // l.a:(Ljava/lang/String;Ljava/lang/String;)V
+   #60 = Methodref          #27.#84       // l.a:(Ljava/util/Timer;)Ljava/util/Timer;
+   #61 = Methodref          #27.#85       // l.a:(Ljava/util/Vector;)V
+   #62 = Methodref          #27.#86       // l.a:(Z)Z
+   #63 = Methodref          #27.#96       // l.b:()J
+   #64 = Methodref          #27.#97       // l.b:(I)I
+   #65 = Methodref          #27.#98       // l.b:(Ljava/lang/String;)Ljava/lang/String;
+   #66 = Methodref          #27.#101      // l.c:()Z
+   #67 = Methodref          #27.#103      // l.d:()Ljava/lang/String;
+   #68 = Methodref          #27.#104      // l.e:()I
+   #69 = Methodref          #27.#105      // l.e:()Ljava/lang/String;
+   #70 = Methodref          #27.#107      // l.f:()Ljava/lang/String;
+   #71 = Methodref          #27.#108      // l.g:()Ljava/lang/String;
+   #72 = Methodref          #27.#109      // l.h:()Ljava/lang/String;
+   #73 = InterfaceMethodref #23.#102      // javax/microedition/io/Connection.close:()V
+   #74 = InterfaceMethodref #25.#110      // wfree/MessageConnection.newMessage:(Ljava/lang/String;)Lwfree/Message;
+   #75 = InterfaceMethodref #25.#113      // wfree/MessageConnection.send:(Lwfree/Message;)V
+   #76 = InterfaceMethodref #26.#114      // wfree/TextMessage.setPayloadText:(Ljava/lang/String;)V
+   #77 = NameAndType        #147:#124     // "<init>":()V
+   #78 = NameAndType        #163:#120     // a:()J
+   #79 = NameAndType        #163:#122     // a:()Ljava/util/Timer;
+   #80 = NameAndType        #163:#123     // a:()Ljava/util/Vector;
+   #81 = NameAndType        #163:#126     // a:()[[Ljava/lang/String;
+   #82 = NameAndType        #163:#134     // a:(Ljava/lang/String;)Ljava/lang/String;
+   #83 = NameAndType        #163:#139     // a:(Ljava/lang/String;Ljava/lang/String;)V
+   #84 = NameAndType        #163:#140     // a:(Ljava/util/Timer;)Ljava/util/Timer;
+   #85 = NameAndType        #163:#142     // a:(Ljava/util/Vector;)V
+   #86 = NameAndType        #163:#144     // a:(Z)Z
+   #87 = NameAndType        #163:#149     // a:I
+   #88 = NameAndType        #163:#151     // a:Ljava/lang/String;
+   #89 = NameAndType        #163:#152     // a:Lwfree/MessageConnection;
+   #90 = NameAndType        #163:#161     // a:Z
+   #91 = NameAndType        #163:#162     // a:[Ljava/lang/String;
+   #92 = NameAndType        #164:#129     // append:(I)Ljava/lang/StringBuffer;
+   #93 = NameAndType        #164:#130     // append:(J)Ljava/lang/StringBuffer;
+   #94 = NameAndType        #164:#132     // append:(Ljava/lang/Object;)Ljava/lang/StringBuffer;
+   #95 = NameAndType        #164:#135     // append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+   #96 = NameAndType        #165:#120     // b:()J
+   #97 = NameAndType        #165:#127     // b:(I)I
+   #98 = NameAndType        #165:#134     // b:(Ljava/lang/String;)Ljava/lang/String;
+   #99 = NameAndType        #165:#149     // b:I
+  #100 = NameAndType        #165:#161     // b:Z
+  #101 = NameAndType        #166:#125     // c:()Z
+  #102 = NameAndType        #167:#124     // close:()V
+  #103 = NameAndType        #168:#121     // d:()Ljava/lang/String;
+  #104 = NameAndType        #169:#119     // e:()I
+  #105 = NameAndType        #169:#121     // e:()Ljava/lang/String;
+  #106 = NameAndType        #170:#133     // equals:(Ljava/lang/Object;)Z
+  #107 = NameAndType        #171:#121     // f:()Ljava/lang/String;
+  #108 = NameAndType        #172:#121     // g:()Ljava/lang/String;
+  #109 = NameAndType        #173:#121     // h:()Ljava/lang/String;
+  #110 = NameAndType        #186:#137     // newMessage:(Ljava/lang/String;)Lwfree/Message;
+  #111 = NameAndType        #187:#136     // open:(Ljava/lang/String;)Ljavax/microedition/io/Connection;
+  #112 = NameAndType        #189:#141     // schedule:(Ljava/util/TimerTask;J)V
+  #113 = NameAndType        #190:#143     // send:(Lwfree/Message;)V
+  #114 = NameAndType        #191:#138     // setPayloadText:(Ljava/lang/String;)V
+  #115 = NameAndType        #192:#131     // sleep:(J)V
+  #116 = NameAndType        #195:#121     // toString:()Ljava/lang/String;
+  #117 = NameAndType        #196:#128     // valueOf:(I)Ljava/lang/String;
+  #118 = Utf8
+  #119 = Utf8               ()I
+  #120 = Utf8               ()J
+  #121 = Utf8               ()Ljava/lang/String;
+  #122 = Utf8               ()Ljava/util/Timer;
+  #123 = Utf8               ()Ljava/util/Vector;
+  #124 = Utf8               ()V
+  #125 = Utf8               ()Z
+  #126 = Utf8               ()[[Ljava/lang/String;
+  #127 = Utf8               (I)I
+  #128 = Utf8               (I)Ljava/lang/String;
+  #129 = Utf8               (I)Ljava/lang/StringBuffer;
+  #130 = Utf8               (J)Ljava/lang/StringBuffer;
+  #131 = Utf8               (J)V
+  #132 = Utf8               (Ljava/lang/Object;)Ljava/lang/StringBuffer;
+  #133 = Utf8               (Ljava/lang/Object;)Z
+  #134 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #135 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuffer;
+  #136 = Utf8               (Ljava/lang/String;)Ljavax/microedition/io/Connection;
+  #137 = Utf8               (Ljava/lang/String;)Lwfree/Message;
+  #138 = Utf8               (Ljava/lang/String;)V
+  #139 = Utf8               (Ljava/lang/String;Ljava/lang/String;)V
+  #140 = Utf8               (Ljava/util/Timer;)Ljava/util/Timer;
+  #141 = Utf8               (Ljava/util/TimerTask;J)V
+  #142 = Utf8               (Ljava/util/Vector;)V
+  #143 = Utf8               (Lwfree/Message;)V
+  #144 = Utf8               (Z)Z
+  #145 = Utf8               0
+  #146 = Utf8               1
+  #147 = Utf8               <init>
+  #148 = Utf8               Code
+  #149 = Utf8               I
+  #150 = Utf8               IAP-ShortCode-PP
+  #151 = Utf8               Ljava/lang/String;
+  #152 = Utf8               Lwfree/MessageConnection;
+  #153 = Utf8               PaySMS.buy: Connection opened - conn:
+  #154 = Utf8               PaySMS.buy: Exception trying to sleep:
+  #155 = Utf8               PaySMS.buy: Failed to close connection! Exception:
+  #156 = Utf8               PaySMS.buy: SMS sent failed! Exception:
+  #157 = Utf8               PaySMS.buy: SMS sent failed! Security Exception:
+  #158 = Utf8               PaySMS.buy: TextMessage created - msg:
+  #159 = Utf8               PaySMS.buy: smsAdress:
+  #160 = Utf8               StackMap
+  #161 = Utf8               Z
+  #162 = Utf8               [Ljava/lang/String;
+  #163 = Utf8               a
+  #164 = Utf8               append
+  #165 = Utf8               b
+  #166 = Utf8               c
+  #167 = Utf8               close
+  #168 = Utf8               d
+  #169 = Utf8               e
+  #170 = Utf8               equals
+  #171 = Utf8               f
+  #172 = Utf8               g
+  #173 = Utf8               h
+  #174 = Utf8               java/lang/Exception
+  #175 = Utf8               java/lang/SecurityException
+  #176 = Utf8               java/lang/String
+  #177 = Utf8               java/lang/StringBuffer
+  #178 = Utf8               java/lang/Thread
+  #179 = Utf8               java/lang/Throwable
+  #180 = Utf8               java/util/Timer
+  #181 = Utf8               javax/microedition/io/Connection
+  #182 = Utf8               wfree/C
+  #183 = Utf8               wfree/MessageConnection
+  #184 = Utf8               wfree/TextMessage
+  #185 = Utf8               l
+  #186 = Utf8               newMessage
+  #187 = Utf8               open
+  #188 = Utf8               run
+  #189 = Utf8               schedule
+  #190 = Utf8               send
+  #191 = Utf8               setPayloadText
+  #192 = Utf8               sleep
+  #193 = Utf8               cbs://
+  #194 = Utf8               text
+  #195 = Utf8               toString
+  #196 = Utf8               valueOf
+  #197 = Utf8               nosms$wait
+  #198 = NameAndType        #197:#124     // nosms$wait:()V
+  #199 = Methodref          #14.#198      // b.nosms$wait:()V
+  #200 = Long               500l
+{
+  b();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #48                 // Method java/lang/Thread."<init>":()V
+         4: return
+
+  public final void run();
+    descriptor: ()V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=4, locals=3, args_size=1
+         0: ldc           #12                 // String cbs://
+         2: astore_1
+         3: invokestatic  #67                 // Method l.d:()Ljava/lang/String;
+         6: ldc           #1                  // String
+         8: invokevirtual #40                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        11: ifne          38
+        14: new           #19                 // class java/lang/StringBuffer
+        17: dup
+        18: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+        21: aload_1
+        22: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        25: invokestatic  #67                 // Method l.d:()Ljava/lang/String;
+        28: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        31: invokevirtual #47                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+        34: astore_1
+        35: goto          184
+        38: invokestatic  #69                 // Method l.e:()Ljava/lang/String;
+        41: ldc           #3                  // String 1
+        43: invokevirtual #40                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        46: ifeq          80
+        49: new           #19                 // class java/lang/StringBuffer
+        52: dup
+        53: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+        56: ldc           #4                  // String IAP-ShortCode-PP
+        58: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+        61: getstatic     #37                 // Field l.b:I
+        64: invokevirtual #43                 // Method java/lang/StringBuffer.append:(I)Ljava/lang/StringBuffer;
+        67: invokevirtual #47                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+        70: invokestatic  #65                 // Method l.b:(Ljava/lang/String;)Ljava/lang/String;
+        73: invokestatic  #58                 // Method l.a:(Ljava/lang/String;)Ljava/lang/String;
+        76: pop
+        77: goto          86
+        80: ldc           #1                  // String
+        82: invokestatic  #58                 // Method l.a:(Ljava/lang/String;)Ljava/lang/String;
+        85: pop
+        86: invokestatic  #70                 // Method l.f:()Ljava/lang/String;
+        89: ldc           #1                  // String
+        91: invokevirtual #40                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        94: ifne          121
+        97: new           #19                 // class java/lang/StringBuffer
+       100: dup
+       101: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       104: aload_1
+       105: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       108: invokestatic  #70                 // Method l.f:()Ljava/lang/String;
+       111: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       114: invokevirtual #47                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+       117: astore_1
+       118: goto          184
+       121: invokestatic  #68                 // Method l.e:()I
+       124: iconst_m1
+       125: if_icmpeq     159
+       128: new           #19                 // class java/lang/StringBuffer
+       131: dup
+       132: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       135: aload_1
+       136: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       139: invokestatic  #57                 // Method l.a:()[[Ljava/lang/String;
+       142: invokestatic  #68                 // Method l.e:()I
+       145: aaload
+       146: bipush        11
+       148: aaload
+       149: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       152: invokevirtual #47                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+       155: astore_1
+       156: goto          184
+       159: iconst_0
+       160: invokestatic  #62                 // Method l.a:(Z)Z
+       163: pop
+       164: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       167: iconst_0
+       168: aaload
+       169: ldc           #2                  // String 0
+       171: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       174: invokestatic  #66                 // Method l.c:()Z
+       177: pop
+       178: iconst_m1
+       179: invokestatic  #64                 // Method l.b:(I)I
+       182: pop
+       183: return
+       184: new           #19                 // class java/lang/StringBuffer
+       187: dup
+       188: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       191: ldc           #11                 // String PaySMS.buy: smsAdress:
+       193: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       196: aload_1
+       197: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       200: pop
+       201: aload_1
+       202: invokestatic  #53                 // Method wfree/C.open:(Ljava/lang/String;)Ljavax/microedition/io/Connection;
+       205: checkcast     #25                 // class wfree/MessageConnection
+       208: putstatic     #34                 // Field l.a:Lwfree/MessageConnection;
+       211: new           #19                 // class java/lang/StringBuffer
+       214: dup
+       215: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       218: ldc           #5                  // String PaySMS.buy: Connection opened - conn:
+       220: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       223: getstatic     #34                 // Field l.a:Lwfree/MessageConnection;
+       226: invokevirtual #45                 // Method java/lang/StringBuffer.append:(Ljava/lang/Object;)Ljava/lang/StringBuffer;
+       229: pop
+       230: getstatic     #34                 // Field l.a:Lwfree/MessageConnection;
+       233: ldc           #13                 // String text
+       235: pop
+       236: nop
+       237: nop
+       238: nop
+       239: nop
+       240: nop
+       241: nop
+       242: nop
+       243: astore_1
+       244: new           #19                 // class java/lang/StringBuffer
+       247: dup
+       248: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       251: ldc           #10                 // String PaySMS.buy: TextMessage created - msg:
+       253: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       256: aload_1
+       257: invokevirtual #45                 // Method java/lang/StringBuffer.append:(Ljava/lang/Object;)Ljava/lang/StringBuffer;
+       260: pop
+       261: aload_1
+       262: invokestatic  #71                 // Method l.g:()Ljava/lang/String;
+       265: pop2
+       266: nop
+       267: nop
+       268: nop
+       269: nop
+       270: ldc2_w        #30                 // long 200l
+       273: invokestatic  #49                 // Method java/lang/Thread.sleep:(J)V
+       276: goto          300
+       279: astore_2
+       280: new           #19                 // class java/lang/StringBuffer
+       283: dup
+       284: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       287: ldc           #6                  // String PaySMS.buy: Exception trying to sleep:
+       289: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       292: aload_2
+       293: invokevirtual #50                 // Method java/lang/Throwable.toString:()Ljava/lang/String;
+       296: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       299: pop
+       300: new           #22                 // class java/util/Timer
+       303: dup
+       304: invokespecial #51                 // Method java/util/Timer."<init>":()V
+       307: invokestatic  #60                 // Method l.a:(Ljava/util/Timer;)Ljava/util/Timer;
+       310: pop
+       311: invokestatic  #55                 // Method l.a:()Ljava/util/Timer;
+       314: new           #15                 // class h
+       317: dup
+       318: invokespecial #39                 // Method h."<init>":()V
+       321: sipush        30000
+       324: i2l
+       325: invokevirtual #52                 // Method java/util/Timer.schedule:(Ljava/util/TimerTask;J)V
+       328: getstatic     #34                 // Field l.a:Lwfree/MessageConnection;
+       331: aload_1
+       332: pop2
+       333: invokestatic  #199                // Method nosms$wait:()V
+       336: nop
+       337: iconst_1
+       338: putstatic     #38                 // Field l.b:Z
+       341: iconst_1
+       342: invokestatic  #62                 // Method l.a:(Z)Z
+       345: pop
+       346: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       349: iconst_0
+       350: aaload
+       351: ldc           #3                  // String 1
+       353: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       356: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       359: iconst_1
+       360: aaload
+       361: invokestatic  #72                 // Method l.h:()Ljava/lang/String;
+       364: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       367: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       370: iconst_2
+       371: aaload
+       372: getstatic     #32                 // Field l.a:I
+       375: invokestatic  #41                 // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+       378: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       381: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       384: iconst_5
+       385: aaload
+       386: getstatic     #33                 // Field l.a:Ljava/lang/String;
+       389: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       392: invokestatic  #54                 // Method l.a:()J
+       395: pop2
+       396: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       399: bipush        11
+       401: aaload
+       402: new           #19                 // class java/lang/StringBuffer
+       405: dup
+       406: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       409: ldc           #1                  // String
+       411: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       414: invokestatic  #63                 // Method l.b:()J
+       417: invokevirtual #44                 // Method java/lang/StringBuffer.append:(J)Ljava/lang/StringBuffer;
+       420: invokevirtual #47                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+       423: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       426: invokestatic  #69                 // Method l.e:()Ljava/lang/String;
+       429: ldc           #3                  // String 1
+       431: invokevirtual #40                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       434: ifne          443
+       437: invokestatic  #56                 // Method l.a:()Ljava/util/Vector;
+       440: invokestatic  #61                 // Method l.a:(Ljava/util/Vector;)V
+       443: ldc2_w        #28                 // long 100l
+       446: invokestatic  #49                 // Method java/lang/Thread.sleep:(J)V
+       449: goto          577
+       452: astore_2
+       453: new           #19                 // class java/lang/StringBuffer
+       456: dup
+       457: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       460: ldc           #6                  // String PaySMS.buy: Exception trying to sleep:
+       462: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       465: aload_2
+       466: invokevirtual #50                 // Method java/lang/Throwable.toString:()Ljava/lang/String;
+       469: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       472: pop
+       473: goto          577
+       476: astore_1
+       477: iconst_0
+       478: invokestatic  #62                 // Method l.a:(Z)Z
+       481: pop
+       482: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       485: iconst_0
+       486: aaload
+       487: ldc           #2                  // String 0
+       489: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       492: bipush        -9
+       494: invokestatic  #64                 // Method l.b:(I)I
+       497: pop
+       498: new           #19                 // class java/lang/StringBuffer
+       501: dup
+       502: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       505: ldc           #9                  // String PaySMS.buy: SMS sent failed! Security Exception:
+       507: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       510: aload_1
+       511: invokevirtual #50                 // Method java/lang/Throwable.toString:()Ljava/lang/String;
+       514: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       517: pop
+       518: goto          577
+       521: astore_1
+       522: iconst_0
+       523: invokestatic  #62                 // Method l.a:(Z)Z
+       526: pop
+       527: getstatic     #36                 // Field l.a:[Ljava/lang/String;
+       530: iconst_0
+       531: aaload
+       532: ldc           #2                  // String 0
+       534: invokestatic  #59                 // Method l.a:(Ljava/lang/String;Ljava/lang/String;)V
+       537: getstatic     #35                 // Field l.a:Z
+       540: ifeq          552
+       543: bipush        -4
+       545: invokestatic  #64                 // Method l.b:(I)I
+       548: pop
+       549: goto          557
+       552: iconst_m1
+       553: invokestatic  #64                 // Method l.b:(I)I
+       556: pop
+       557: new           #19                 // class java/lang/StringBuffer
+       560: dup
+       561: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       564: ldc           #8                  // String PaySMS.buy: SMS sent failed! Exception:
+       566: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       569: aload_1
+       570: invokevirtual #50                 // Method java/lang/Throwable.toString:()Ljava/lang/String;
+       573: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       576: pop
+       577: getstatic     #34                 // Field l.a:Lwfree/MessageConnection;
+       580: ifnull        591
+       583: getstatic     #34                 // Field l.a:Lwfree/MessageConnection;
+       586: invokeinterface #73,  1           // InterfaceMethod javax/microedition/io/Connection.close:()V
+       591: goto          615
+       594: astore_1
+       595: new           #19                 // class java/lang/StringBuffer
+       598: dup
+       599: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       602: ldc           #7                  // String PaySMS.buy: Failed to close connection! Exception:
+       604: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       607: aload_1
+       608: invokevirtual #50                 // Method java/lang/Throwable.toString:()Ljava/lang/String;
+       611: invokevirtual #46                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+       614: pop
+       615: invokestatic  #66                 // Method l.c:()Z
+       618: pop
+       619: return
+      Exception table:
+         from    to  target type
+           270   276   279   Class java/lang/Exception
+           443   449   452   Class java/lang/Exception
+             0   183   476   Class java/lang/SecurityException
+           184   473   476   Class java/lang/SecurityException
+             0   183   521   Class java/lang/Throwable
+           184   473   521   Class java/lang/Throwable
+           577   591   594   Class java/lang/Exception
+      StackMap: number_of_entries = 18
+        frame_type = 255 offset = 38
+          locals = [ top, class java/lang/String ]
+          stack = []
+        frame_type = 255 offset = 80
+          locals = [ top, class java/lang/String ]
+          stack = []
+        frame_type = 255 offset = 86
+          locals = [ top, class java/lang/String ]
+          stack = []
+        frame_type = 255 offset = 121
+          locals = [ top, class java/lang/String ]
+          stack = []
+        frame_type = 255 offset = 159
+          locals = []
+          stack = []
+        frame_type = 255 offset = 184
+          locals = [ top, class java/lang/String ]
+          stack = []
+        frame_type = 255 offset = 279
+          locals = [ top, class wfree/TextMessage ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 255 offset = 300
+          locals = [ top, class wfree/TextMessage ]
+          stack = []
+        frame_type = 255 offset = 443
+          locals = []
+          stack = []
+        frame_type = 255 offset = 452
+          locals = []
+          stack = [ class java/lang/Exception ]
+        frame_type = 255 offset = 476
+          locals = []
+          stack = [ class java/lang/SecurityException ]
+        frame_type = 255 offset = 521
+          locals = []
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 offset = 552
+          locals = [ top, class java/lang/Throwable ]
+          stack = []
+        frame_type = 255 offset = 557
+          locals = [ top, class java/lang/Throwable ]
+          stack = []
+        frame_type = 255 offset = 577
+          locals = []
+          stack = []
+        frame_type = 255 offset = 591
+          locals = []
+          stack = []
+        frame_type = 255 offset = 594
+          locals = []
+          stack = [ class java/lang/Exception ]
+        frame_type = 255 offset = 615
+          locals = []
+          stack = []
+
+  private static void nosms$wait();
+    descriptor: ()V
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc2_w        #200                // long 500l
+         3: invokestatic  #49                 // Method java/lang/Thread.sleep:(J)V
+         6: return
+}

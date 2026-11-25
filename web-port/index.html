@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <title>Green Farm 3 — Full Window Web Port</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="viewport-stage" id="viewport-stage" aria-label="Màn hình game Green Farm 3">
+      <canvas id="game" width="240" height="320" aria-label="Green Farm 3" autofocus></canvas>
+      <div class="floating-toolbar" aria-label="Tiện ích cửa sổ">
+        <span class="runtime-badge" id="status"><span></span> Sẵn sàng</span>
+        <button type="button" id="btn-fullscreen" title="Toàn màn hình (Fullscreen)">⛶ Toàn màn hình</button>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+  <script type="module" src="game.js"></script>
+  <script>
+    (() => {
+      const stage = document.getElementById('viewport-stage');
+      const btn = document.getElementById('btn-fullscreen');
+      btn?.addEventListener('click', () => {
+        if (!document.fullscreenElement) stage?.requestFullscreen?.().catch(() => {});
+        else document.exitFullscreen?.().catch(() => {});
+      });
+    })();
+  </script>
+</body>
+</html>
